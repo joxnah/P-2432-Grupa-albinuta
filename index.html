@@ -1,97 +1,528 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P-2432</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupa P-2432</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Roboto+Slab:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class ="antent">
-        <h1>Grupa P-2432</h1>
-    </header>
-    <main>
-        <section class="content" aria-label="Colegii clasei"></section>
-
-      <article class="card">
-        <img class="card-fotografie" src="" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="imagini/elev-05.jpg" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="imagini/avatar-05.png" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="imagini/elev-06.jpg" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="imagini/avatar-06.png" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="imagini/elev-07.jpg" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="imagini/avatar-07.png" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="imagini/elev-08.jpg" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="imagini/avatar-08.png" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="imagini/elev-09.jpg" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="imagini/avatar-09.png" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card-fotografie" src="imagini/elev-10.jpg" alt="">
-        <div class="card-detalii">
-          <img class="avatar" src="imagini/avatar-10.png" alt="" width="48" height="48">
-          <h2 class="card-nume"></h2>
-        </div>
-      </article>
-    </main>
+  <main>
+    <section class="intro" aria-labelledby="titlu">
+      <h1 id="titlu">P-2432</h1>
+      <p>Grupa preferată a doamnei Andreea</p>
+    </section>
+    <section class="content" id="colegi" aria-label="Colegii grupei P-2432">
+      <table role="presentation">
+        <tbody>
+          <tr>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-1" aria-label="Detalii despre Achiruș Constantin">
+              <div class="card">
+                <label class="profil" for="coleg-1">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Achiruș Constantin" width="130" height="150"></span>
+                  <span class="nume">Achiruș Constantin</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Nicolae</p>
+                  <p class="descriere">Constantin face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-2" aria-label="Detalii despre Batițchi Nicolae">
+              <div class="card">
+                <label class="profil" for="coleg-2">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Batițchi Nicolae" width="130" height="150"></span>
+                  <span class="nume">Batițchi Nicolae</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Denis</p>
+                  <p class="descriere">Nicolae face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-3" aria-label="Detalii despre Beșliu Dan">
+              <div class="card">
+                <label class="profil" for="coleg-3">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Beșliu Dan" width="130" height="150"></span>
+                  <span class="nume">Beșliu Dan</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Mihail</p>
+                  <p class="descriere">Dan face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-4" aria-label="Detalii despre Bragari Eduard">
+              <div class="card">
+                <label class="profil" for="coleg-4">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Bragari Eduard" width="130" height="150"></span>
+                  <span class="nume">Bragari Eduard</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Viorel</p>
+                  <p class="descriere">Eduard face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-5" aria-label="Detalii despre Caraman Pavel">
+              <div class="card">
+                <label class="profil" for="coleg-5">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Caraman Pavel" width="130" height="150"></span>
+                  <span class="nume">Caraman Pavel</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Stanislav</p>
+                  <p class="descriere">Pavel face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-6" aria-label="Detalii despre Ciutac Adriana">
+              <div class="card">
+                <label class="profil" for="coleg-6">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Ciutac Adriana" width="130" height="150"></span>
+                  <span class="nume">Ciutac Adriana</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Andrei</p>
+                  <p class="descriere">Adriana face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-7" aria-label="Detalii despre Cîrlan Ion">
+              <div class="card">
+                <label class="profil" for="coleg-7">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Cîrlan Ion" width="130" height="150"></span>
+                  <span class="nume">Cîrlan Ion</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Vitalie</p>
+                  <p class="descriere">Ion face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-8" aria-label="Detalii despre Comanac Patricia">
+              <div class="card">
+                <label class="profil" for="coleg-8">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Comanac Patricia" width="130" height="150"></span>
+                  <span class="nume">Comanac Patricia</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Tudor</p>
+                  <p class="descriere">Patricia face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-9" aria-label="Detalii despre Corciu Alexandru">
+              <div class="card">
+                <label class="profil" for="coleg-9">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Corciu Alexandru" width="130" height="150"></span>
+                  <span class="nume">Corciu Alexandru</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Grigore</p>
+                  <p class="descriere">Alexandru face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-10" aria-label="Detalii despre Crețu Sergiu">
+              <div class="card">
+                <label class="profil" for="coleg-10">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Crețu Sergiu" width="130" height="150"></span>
+                  <span class="nume">Crețu Sergiu</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Serghei</p>
+                  <p class="descriere">Sergiu face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-11" aria-label="Detalii despre Garabajiu Gheorghe">
+              <div class="card">
+                <label class="profil" for="coleg-11">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Garabajiu Gheorghe" width="130" height="150"></span>
+                  <span class="nume">Garabajiu Gheorghe</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Vitalie</p>
+                  <p class="descriere">Gheorghe face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-12" aria-label="Detalii despre Găină Vladislav">
+              <div class="card">
+                <label class="profil" for="coleg-12">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Găină Vladislav" width="130" height="150"></span>
+                  <span class="nume">Găină Vladislav</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Liviu</p>
+                  <p class="descriere">Vladislav face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-13" aria-label="Detalii despre Gojan Marin">
+              <div class="card">
+                <label class="profil" for="coleg-13">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Gojan Marin" width="130" height="150"></span>
+                  <span class="nume">Gojan Marin</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Oleg</p>
+                  <p class="descriere">Marin face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-14" aria-label="Detalii despre Grigoriță Salomeia">
+              <div class="card">
+                <label class="profil" for="coleg-14">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Grigoriță Salomeia" width="130" height="150"></span>
+                  <span class="nume">Grigoriță Salomeia</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Ruslan</p>
+                  <p class="descriere">Salomeia face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-15" aria-label="Detalii despre Istrati Oxana">
+              <div class="card">
+                <label class="profil" for="coleg-15">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Istrati Oxana" width="130" height="150"></span>
+                  <span class="nume">Istrati Oxana</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Sergiu</p>
+                  <p class="descriere">Oxana face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-16" aria-label="Detalii despre Jumiga Virineea">
+              <div class="card">
+                <label class="profil" for="coleg-16">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Jumiga Virineea" width="130" height="150"></span>
+                  <span class="nume">Jumiga Virineea</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Victor</p>
+                  <p class="descriere">Virineea face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-17" aria-label="Detalii despre Livadaru Constantin">
+              <div class="card">
+                <label class="profil" for="coleg-17">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Livadaru Constantin" width="130" height="150"></span>
+                  <span class="nume">Livadaru Constantin</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Constantin</p>
+                  <p class="descriere">Constantin face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-18" aria-label="Detalii despre Macari Nicolae">
+              <div class="card">
+                <label class="profil" for="coleg-18">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Macari Nicolae" width="130" height="150"></span>
+                  <span class="nume">Macari Nicolae</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Nespecificat</p>
+                  <p class="descriere">Nicolae face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-19" aria-label="Detalii despre Medinschi Vladislav">
+              <div class="card">
+                <label class="profil" for="coleg-19">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Medinschi Vladislav" width="130" height="150"></span>
+                  <span class="nume">Medinschi Vladislav</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Vasile</p>
+                  <p class="descriere">Vladislav face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-20" aria-label="Detalii despre Miron Dragoș">
+              <div class="card">
+                <label class="profil" for="coleg-20">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Miron Dragoș" width="130" height="150"></span>
+                  <span class="nume">Miron Dragoș</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Vasile</p>
+                  <p class="descriere">Dragoș face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-21" aria-label="Detalii despre Mironova Ecaterina">
+              <div class="card">
+                <label class="profil" for="coleg-21">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Mironova Ecaterina" width="130" height="150"></span>
+                  <span class="nume">Mironova Ecaterina</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Andrei</p>
+                  <p class="descriere">Ecaterina face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-22" aria-label="Detalii despre Munteanu Alexandrina">
+              <div class="card">
+                <label class="profil" for="coleg-22">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Munteanu Alexandrina" width="130" height="150"></span>
+                  <span class="nume">Munteanu Alexandrina</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Nespecificat</p>
+                  <p class="descriere">Alexandrina face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-23" aria-label="Detalii despre Nedelco Maxim">
+              <div class="card">
+                <label class="profil" for="coleg-23">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Nedelco Maxim" width="130" height="150"></span>
+                  <span class="nume">Nedelco Maxim</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Igor</p>
+                  <p class="descriere">Maxim face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-24" aria-label="Detalii despre Nicolai Petru">
+              <div class="card">
+                <label class="profil" for="coleg-24">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Nicolai Petru" width="130" height="150"></span>
+                  <span class="nume">Nicolai Petru</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Andrei</p>
+                  <p class="descriere">Petru face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-25" aria-label="Detalii despre Nitrean Remos">
+              <div class="card">
+                <label class="profil" for="coleg-25">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Nitrean Remos" width="130" height="150"></span>
+                  <span class="nume">Nitrean Remos</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Iaroslav</p>
+                  <p class="descriere">Remos face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-26" aria-label="Detalii despre Orlețchi Bogdan">
+              <div class="card">
+                <label class="profil" for="coleg-26">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Orlețchi Bogdan" width="130" height="150"></span>
+                  <span class="nume">Orlețchi Bogdan</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Victor</p>
+                  <p class="descriere">Bogdan face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-27" aria-label="Detalii despre Pascaru Gabriel">
+              <div class="card">
+                <label class="profil" for="coleg-27">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Pascaru Gabriel" width="130" height="150"></span>
+                  <span class="nume">Pascaru Gabriel</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Nespecificat</p>
+                  <p class="descriere">Gabriel face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-28" aria-label="Detalii despre Poclitar Artemie">
+              <div class="card">
+                <label class="profil" for="coleg-28">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Poclitar Artemie" width="130" height="150"></span>
+                  <span class="nume">Poclitar Artemie</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Ivan</p>
+                  <p class="descriere">Artemie face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-29" aria-label="Detalii despre Postoroncă Sergiu">
+              <div class="card">
+                <label class="profil" for="coleg-29">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Postoroncă Sergiu" width="130" height="150"></span>
+                  <span class="nume">Postoroncă Sergiu</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Ion</p>
+                  <p class="descriere">Sergiu face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-30" aria-label="Detalii despre Prijilevschi Daniel">
+              <div class="card">
+                <label class="profil" for="coleg-30">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Prijilevschi Daniel" width="130" height="150"></span>
+                  <span class="nume">Prijilevschi Daniel</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Alexandru</p>
+                  <p class="descriere">Daniel face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-31" aria-label="Detalii despre Roman Mădălina">
+              <div class="card">
+                <label class="profil" for="coleg-31">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Roman Mădălina" width="130" height="150"></span>
+                  <span class="nume">Roman Mădălina</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Viorel</p>
+                  <p class="descriere">Mădălina face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-32" aria-label="Detalii despre Sava Damian">
+              <div class="card">
+                <label class="profil" for="coleg-32">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Sava Damian" width="130" height="150"></span>
+                  <span class="nume">Sava Damian</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Vitalie</p>
+                  <p class="descriere">Damian face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-33" aria-label="Detalii despre Stepan Gabriela">
+              <div class="card">
+                <label class="profil" for="coleg-33">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Stepan Gabriela" width="130" height="150"></span>
+                  <span class="nume">Stepan Gabriela</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Gheorghe</p>
+                  <p class="descriere">Gabriela face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-34" aria-label="Detalii despre Stici Denis">
+              <div class="card">
+                <label class="profil" for="coleg-34">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Stici Denis" width="130" height="150"></span>
+                  <span class="nume">Stici Denis</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Ion</p>
+                  <p class="descriere">Denis face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input class="toggle" type="checkbox" id="coleg-35" aria-label="Detalii despre Tilipeț Dumitru">
+              <div class="card">
+                <label class="profil" for="coleg-35">
+                  <span class="fotografie"><img src="imagini/stickman.png" alt="Stickman provizoriu pentru Tilipeț Dumitru" width="130" height="150"></span>
+                  <span class="nume">Tilipeț Dumitru</span>
+                </label>
+                <div class="detalii">
+                  <p>Patronimic: Vladimir</p>
+                  <p class="descriere">Dumitru face parte din grupa P-2432 de la CEITI. Descrierea personală va fi completată în curând.</p>
+                  <div class="personaj">Personaj Aseprite</div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 </body>
 </html>
