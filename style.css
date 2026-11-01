@@ -1,163 +1,160 @@
+/* PAGINA: acelasi font simplu pentru tot textul. */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  color: #1a293b;
+  font-family: Arial, sans-serif;
   background: #eff5f6;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 28px;
+  color: #302e36;
 }
 
 .intro {
-  padding: 45px 20px;
-  color: white;
+  padding: 35px 20px;
   background: #1a293b;
+  color: #fff2d5;
   text-align: center;
 }
 
 h1 {
-  margin: 0 0 12px;
-  font-family: "Roboto Slab", Georgia, serif;
-  font-size: 55px;
-  line-height: 60px;
-  letter-spacing: -1px;
-  font-weight: 400;
+  margin: 0;
+  font-size: 40px;
 }
 
 .intro p {
-  margin: 0;
-  font-size: 18px;
+  margin-bottom: 0;
 }
 
-.content {
-  padding: 18px;
-  overflow-x: auto;
-  overflow-y: hidden;
+/* ASEZAREA: flex-wrap muta cartile pe randul urmator cand nu incap. */
+.colegi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1500px;
+  margin: auto;
 }
 
-table {
-  margin: 0 auto;
-  border-spacing: 23px 72px;
-}
-
-td {
-  padding: 0;
-  vertical-align: top;
-}
-
-/* Bifa ascunsă păstrează cardul deschis după apăsarea imaginii. */
-.toggle {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip-path: inset(50%);
-}
-
-.card {
+.coleg {
   position: relative;
-  width: 234px;
-  height: 195px;
-  padding: 18px 14px;
-  border: 1px solid #bad2d8;
-  border-top: 3px solid #dd1d41;
-  border-radius: 15px;
-  background: white;
-  box-shadow: 0 5px 20px #1a293b26;
-  text-align: center;
-  transition: height 0.3s ease-in-out;
+  width: 280px;
+  max-width: 100%;
+  height: 410px;
+  perspective: 1000px; /* Da profunzime intoarcerii 3D. */
 }
 
-.card:hover,
-.toggle:checked + .card,
-.toggle:focus-visible + .card {
-  height: 360px;
-}
-
-.profil {
+.carte, .interior {
   display: block;
+  height: 100%;
+  transform-style: preserve-3d; /* Pastreaza cele doua fete in 3D. */
+}
+
+.carte {
   cursor: pointer;
 }
 
-.toggle:focus-visible + .card .profil {
-  outline: 3px solid #dd1d41;
-  outline-offset: 4px;
-}
-
-/* Imaginea stă ridicată față de card, ca în exemplul trimis. */
-.fotografie {
-  position: relative;
-  top: -54px;
-  z-index: 1;
+/* ASPECTUL: fata si spatele au aceeasi forma si culoare. */
+.fata, .spate {
+  position: absolute;
+  inset: 0; /* Ocupa tot spatiul din .interior. */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 171px;
-  border-radius: 15px;
-  background: #eff5f6;
-  box-shadow: 0 5px 20px #1a293b26;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  background: #fff2d5;
+  border: 2px solid #302e36;
+  border-radius: 14px;
+  box-shadow: 0 7px 0 #356350;
+  backface-visibility: hidden; /* Ascunde fata vazuta din spate. */
+  transition: visibility 0s 0.3s; /* Schimba fata vizibila la jumatatea rotirii. */
 }
 
-.fotografie img {
-  width: 117px;
-  height: 144px;
-  object-fit: contain;
-  border-radius: 15px;
+.numar {
+  font-size: 12px;
+}
+
+.poza {
+  width: 100%;
+  height: 220px;
+  flex-shrink: 0;
+  object-fit: cover; /* Umple rama fara sa deformeze fotografia. */
+  object-position: center 25%;
+  border: 1px solid #302e36;
+  border-radius: 7px;
 }
 
 .nume {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 44px;
-  margin-top: -41px;
-  font-family: "Roboto Slab", Georgia, serif;
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-/* Textul apare treptat după extinderea cardului. */
-.detalii {
-  margin-top: -10px;
-  padding: 0 5px;
-  color: #1a293b;
-  font-size: 11px;
-  line-height: 1.6;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.card:hover .detalii,
-.toggle:checked + .card .detalii,
-.toggle:focus-visible + .card .detalii {
-  margin-top: 5px;
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 0.2s;
-}
-
-.detalii p {
-  margin: 7px 0;
+  font-size: 22px;
 }
 
 .descriere {
-  color: #566575;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #655d56;
 }
 
 .personaj {
-  padding: 7px;
-  border: 1px dashed #bad2d8;
-  color: #566575;
+  width: 100%;
+  height: 168px;
+  flex-shrink: 0;
+  margin: auto;
+  object-fit: cover;
+  image-rendering: pixelated;
+  background: #f1e8cd;
+  border: 1px solid #d0d0b8;
+  border-radius: 8px;
 }
 
-@media (max-width: 650px) {
-  .intro p {
-    font-size: 17px;
+/* CLICK: checkboxul e invizibil, dar apasarea pe carte il bifeaza. */
+.intoarcere {
+  position: absolute;
+  opacity: 0;
+}
+
+.interior {
+  position: relative;
+  transition: transform 0.6s; /* Rotirea dureaza 0.6 secunde. */
+}
+
+.spate {
+  transform: rotateY(180deg);
+  visibility: hidden;
+}
+
+/* :checked inseamna bifat; + selecteaza elementul imediat urmator. */
+.intoarcere:checked + .interior {
+  transform: rotateY(180deg);
+}
+
+.intoarcere:checked + .interior .fata {
+  visibility: hidden;
+}
+
+.intoarcere:checked + .interior .spate {
+  visibility: visible;
+}
+
+/* Contur vizibil cand alegi cartea cu Tab; Space o intoarce. */
+.intoarcere:focus-visible + .interior {
+  outline: 3px solid #356350;
+  outline-offset: 7px;
+  border-radius: 14px;
+}
+
+/* HOVER: balansul ruleaza cat timp mouse-ul sta pe carte. */
+@media (hover: hover) {
+  .coleg:hover .carte {
+    animation: balans 0.9s infinite;
+  }
+}
+
+@keyframes balans {
+  0%, 100% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
   }
 }
